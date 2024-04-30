@@ -4,16 +4,59 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d284a16-2719-4a24-b77e-fe1f9d1b1404" name="Changes" comment="" />
+    <list default="true" id="8d284a16-2719-4a24-b77e-fe1f9d1b1404" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/TicketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/IssueTicketRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/IssueTicketResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/ResponseStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/BaseModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Bill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/BillStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/FeeCalculationStrategyType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Gate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/GateStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/GateType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Operator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ParkingFloor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ParkingLot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ParkingLotStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ParkingSpot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ParkingSpotStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/PaymentMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/PaymentStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/SpotAssignmentStrategyType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/VehicleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2fUhX040Gxeiu3xZdutdJy5BL3X" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -22,15 +65,24 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "21",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "onboarding.tips.debug.path": "/Users/harshitbole/Desktop/Java/LLD-Machine Coding/Parking Lot/src/Main.java",
+    "settings.editor.selected.configurable": "editor.preferences.appearance",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="models" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,6 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713861601745</updated>
       <workItem from="1713861602755" duration="318000" />
+      <workItem from="1714450101876" duration="5828000" />
     </task>
     <servers />
   </component>
@@ -50,7 +103,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/Client.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
