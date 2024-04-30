@@ -5,34 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d284a16-2719-4a24-b77e-fe1f9d1b1404" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/TicketController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/IssueTicketRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/IssueTicketResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/ResponseStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/BaseModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Bill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/BillStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/FeeCalculationStrategyType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Gate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/GateStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/GateType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Operator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/ParkingFloor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/ParkingLot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/ParkingLotStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/ParkingSpot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/ParkingSpotStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/PaymentMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/PaymentStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/SpotAssignmentStrategyType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/VehicleType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exceptions/GateNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exceptions/ParkingLotNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/SpotAssignmentStrategyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repositories/GateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repositories/ParkingLotRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repositories/TicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repositories/VehicleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategies/CheapestSpotAssignmentStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategies/NearestSpotAssignmentStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategies/RandomSpotAssignmentStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategies/SpotAssignmentStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/SpotAssignmentStrategyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/SpotAssignmentStrategyType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/TicketService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -73,6 +60,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/Users/harshitbole/Desktop/Java/LLD-Machine Coding/Parking Lot/src/Main.java",
     "settings.editor.selected.configurable": "editor.preferences.appearance",
     "vue.rearranger.settings.migration": "true"
@@ -92,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713861601745</updated>
       <workItem from="1713861602755" duration="318000" />
-      <workItem from="1714450101876" duration="5828000" />
+      <workItem from="1714450101876" duration="12135000" />
     </task>
     <servers />
   </component>
