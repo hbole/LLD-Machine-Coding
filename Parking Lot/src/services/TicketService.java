@@ -7,21 +7,30 @@ import factories.SpotAssignmentStrategyFactory;
 import models.*;
 import repositories.GateRepository;
 import repositories.ParkingLotRepository;
+import repositories.TicketRepository;
 import repositories.VehicleRepository;
 import strategies.SpotAssignmentStrategy;
 
 import java.util.Date;
 import java.util.Optional;
+import java.util.Random;
 
 public class TicketService {
     private GateRepository gateRepository;
     private VehicleRepository vehicleRepository;
     private ParkingLotRepository parkingLotRepository;
+    private TicketRepository ticketRepository;
 
-    public TicketService(GateRepository gateRepository, VehicleRepository vehicleRepository, ParkingLotRepository parkingLotRepository) {
+    public TicketService(
+            GateRepository gateRepository,
+            VehicleRepository vehicleRepository,
+            ParkingLotRepository parkingLotRepository,
+            TicketRepository ticketRepository
+    ) {
         this.gateRepository = gateRepository;
         this.vehicleRepository = vehicleRepository;
         this.parkingLotRepository = parkingLotRepository;
+        this.ticketRepository = ticketRepository;
     }
 
     public Ticket issueTicket(Long gateId, String ownerName, VehicleType vehicleType, String vehicleNumber) throws GateNotFoundException, ParkingLotNotFoundException {
@@ -55,10 +64,21 @@ public class TicketService {
         }
 
         //3. Validate the user details.
-        //4. Finally, issue the ticket.
         SpotAssignmentStrategy spotAssignmentStrategy= SpotAssignmentStrategyFactory.getSpotAssignmentStrategy(SpotAssignmentStrategyType.RANDOM, this.parkingLotRepository);
 
         ParkingSpot parkingSpot = spotAssignmentStrategy.assignParkingSpot(gate, vehicleType);
-        return null;
+
+        //4. Finally, issue the ticket.
+        Ticket ticket = new Ticket();
+        ticket.setEntryTime(new Date());
+        ticket.setNumber(String.valueOf(new Random().nextInt()));
+        ticket.setVehicle(vehicle);
+        ticket.setParkingSpot(parkingSpot);
+        ticket.setGeneratedBy(operator);
+        ticket.setGeneratedAt(gate);
+
+        ticket = ticketRepository.save(ticket);
+
+        return ticket;
     }
 }

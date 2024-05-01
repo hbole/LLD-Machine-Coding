@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d284a16-2719-4a24-b77e-fe1f9d1b1404" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/exceptions/GateNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/ParkingLotNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/SpotAssignmentStrategyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repositories/GateRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repositories/ParkingLotRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repositories/TicketRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repositories/VehicleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/strategies/CheapestSpotAssignmentStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/strategies/NearestSpotAssignmentStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/strategies/RandomSpotAssignmentStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/strategies/SpotAssignmentStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/SpotAssignmentStrategyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/SpotAssignmentStrategyType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/VehicleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/VehicleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/TicketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/TicketRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/TicketService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,22 +71,11 @@
       <option name="presentableId" value="Default" />
       <updated>1713861601745</updated>
       <workItem from="1713861602755" duration="318000" />
-      <workItem from="1714450101876" duration="12135000" />
+      <workItem from="1714450101876" duration="14823000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Client.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

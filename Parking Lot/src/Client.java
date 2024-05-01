@@ -1,17 +1,47 @@
+import controllers.TicketController;
+import dto.IssueTicketRequestDTO;
+import dto.IssueTicketResponseDTO;
+import dto.ResponseStatus;
+import models.Ticket;
+import models.VehicleType;
+import repositories.GateRepository;
+import repositories.ParkingLotRepository;
+import repositories.TicketRepository;
+import repositories.VehicleRepository;
+import services.TicketService;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Client {
     public static void main(String[] args) {
-        // Press Opt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        GateRepository gateRepository = new GateRepository();
+        VehicleRepository vehicleRepository = new VehicleRepository();
+        ParkingLotRepository parkingLotRepository = new ParkingLotRepository();
+        TicketRepository ticketRepository = new TicketRepository();
 
-        // Press Ctrl+R or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        TicketService ticketService = new TicketService(
+                gateRepository,
+                vehicleRepository,
+                parkingLotRepository,
+                ticketRepository
+        );
 
-            // Press Ctrl+D to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Cmd+F8.
-            System.out.println("i = " + i);
+        TicketController ticketController = new TicketController(ticketService);
+
+        IssueTicketRequestDTO issueTicketRequest = new IssueTicketRequestDTO();
+        issueTicketRequest.setGateId(1234L);
+        issueTicketRequest.setVehicleNumber("KA53HP2722");
+        issueTicketRequest.setVehicleType(VehicleType.TWO_WHEELER);
+        issueTicketRequest.setVehicleOwnerName("Harshit");
+
+        //TODO: Enter some random data in the map and check if we are able to create a ticket object or not
+
+        Ticket ticket;
+        IssueTicketResponseDTO issueTicketResponse = ticketController.issueTicket(issueTicketRequest);
+        if (issueTicketResponse.getResponseStatus().equals(ResponseStatus.SUCCESS)) {
+            ticket = issueTicketResponse.getTicket();
+        } else {
+            System.out.println("Issue with generating a ticket");
         }
     }
 }
