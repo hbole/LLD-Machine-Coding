@@ -3,6 +3,7 @@ package com.bookmyshow.models;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
+import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,4 +19,7 @@ public class Payment extends BaseModel {
 
     @Enumerated(EnumType.ORDINAL)
     private PaymentStatus paymentStatus;
+
+    @ManyToOne
+    private Booking booking;
 }

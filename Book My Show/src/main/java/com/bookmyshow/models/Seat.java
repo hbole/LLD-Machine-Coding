@@ -15,4 +15,7 @@ public class Seat extends BaseModel {
     private SeatType seatType;
     private int rowVal;
     private int colVal;
+
+    @ManyToOne
+    private Screen screen;
 }

@@ -1,2 +1,7 @@
-package com.bookmyshow.exceptions;public class UserNotFoundException {
+package com.bookmyshow.exceptions;
+
+public class UserNotFoundException extends Exception {
+    public UserNotFoundException(String message) {
+        super(message);
+    }
 }

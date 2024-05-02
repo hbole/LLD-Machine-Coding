@@ -18,7 +18,7 @@ public class Booking extends BaseModel {
     private List<ShowSeat> showSeats;
     private int amount;
 
-    @OneToMany
+    @OneToMany(mappedBy = "booking")
     private List<Payment> payments;
 
     @ManyToOne

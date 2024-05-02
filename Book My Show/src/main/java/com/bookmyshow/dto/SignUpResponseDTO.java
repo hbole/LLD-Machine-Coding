@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class BookMovieResponseDTO  {
-    private Long bookingId;
+public class SignUpResponseDTO {
     private ResponseStatus responseStatus;
+    private Long userId;
 }
