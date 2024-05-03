@@ -27,8 +27,6 @@ public class BookMyShowApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BookMyShowApplication.class, args);
-
-
 	}
 
 }
