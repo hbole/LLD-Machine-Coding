@@ -1,4 +1,4 @@
-package com.splitwise.repositories;
+package com.splitwise.models;
 
 public enum ExpenseUserType {
     PAID_BY,
