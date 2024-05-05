@@ -53,7 +53,7 @@ public class QuestionService {
         return question;
     }
 
-    public List<Question> displayQuestions() {
+    public List<Question> getAllQuestions() {
         List<Question> questions = questionRepository.getQuestions();
         return questions;
     }
